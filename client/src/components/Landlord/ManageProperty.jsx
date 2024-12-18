@@ -90,8 +90,7 @@ const ManageProperty = () => {
           Update
         </button>
       </div>
-      <AddTenantButton propertyId={propertyId} onTenantAdded={handleTenantAdded} />
-      <TenantTable tenants={property.tenants} propertyId={propertyId} onTenantRemoved={handleTenantRemoved} />
+      
     </div>
   );
 };
