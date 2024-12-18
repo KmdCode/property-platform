@@ -64,16 +64,11 @@ const Header = () => {
             <>
               {userRole === 'tenant' && (
                 <>
-                  <a href="/tenant-dashboard" className="text-gray-600 hover:text-gray-800">Tenant Dashboard</a>
                 </>
               )}
               {userRole === 'landlord' && (
                 <>
                   <a href="/admin-dashboard" className="text-gray-600 hover:text-gray-800">Admin Dashboard</a>
-                  <a href="/notifications" className="text-gray-600 hover:text-gray-800 relative">
-                    Notifications
-                    <span className="absolute top-0 right-0 inline-block w-2.5 h-2.5 bg-red-500 rounded-full"></span>
-                  </a>
                 </>
               )}
               <a href="/signin" onClick={handleLogout} className="text-gray-600 hover:text-gray-800">Logout</a>
