@@ -10,7 +10,7 @@ exports.getProperties = async (req, res) => {
     
     const baseURL = `${process.env.BASE_URL}`
 
-    const properties = await Property.find().select('name price location furnished genderAllowed occupancyType images agent webUrl').lean();
+    const properties = await Property.find().select('name price location furnished genderAllowed occupancyType images agent webUrl phoneNumber').lean();
     
     const propertiesWithSingleImage = properties.map((property) => ({
       ...property,

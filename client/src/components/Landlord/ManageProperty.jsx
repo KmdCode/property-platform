@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import UpdatePropertyForm from './UpdatePropertyForm'; 
-import TenantTable from './TenantTable';
-import AddTenantButton from './AddTenantButton';
 import apiClient from '../../utils/apiClient';
 
 const ManageProperty = () => {
@@ -34,16 +32,6 @@ const ManageProperty = () => {
     setProperty(updatedProperty); 
   };
 
-  const handleTenantAdded = () => {
-    // Refresh the tenant list or fetch updated data
-  };
-
-  const handleTenantRemoved = (tenantId) => {
-    setProperty((prevProperty) => ({
-      ...prevProperty,
-      tenants: prevProperty.tenants.filter((tenant) => tenant._id !== tenantId),
-    }));
-  };
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
@@ -81,8 +69,9 @@ const ManageProperty = () => {
         <p className="text-gray-600 mb-2">{property.description}</p>
         <p className="font-bold mb-2">Price: R{property.price}/pm</p>
         <p className="text-gray-500 mb-2">Location: {property.location}</p>
+        <p className="text-gray-500 mb-2">Phone Number: +27 {property.phoneNumber}</p>
+        <p className="text-gray-500 mb-2">Link: {property.webUrl}</p>
         <p className="text-gray-500 mb-2">Furnished: {property.furnished ? 'Yes' : 'No'}</p>
-
         <button
           onClick={() => setIsUpdateOpen(true)}
           className="bg-violet-700 text-white py-2 px-4 mt-2 rounded-lg hover:bg-violet-800"

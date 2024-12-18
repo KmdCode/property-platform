@@ -45,8 +45,14 @@ const propertySchema = new mongoose.Schema({
     }
   },
   webUrl:{
-    type: String
+    type: String,
+    required: true,
   },
+  phoneNumber:{
+    type: Number,
+    required: true,
+
+  }
 
 });
 

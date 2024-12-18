@@ -16,6 +16,7 @@ const PropertyCard = ({ property }) => {
       <p><strong>Description:</strong> {property.description}</p>
       <p><strong>Gender Allowed:</strong> {property.genderAllowed}</p>
       <p><strong>Room Type:</strong> {property.occupancyType}</p>
+      <p><strong>Link:</strong> {property.webUrl}</p>
       <p><strong>Furnished:</strong> {property.furnished ? 'Yes' : 'No'}</p>
       {/* <p><strong>Date Added:</strong> {new Date(property.createdAt).toLocaleDateString()}</p> */}
 

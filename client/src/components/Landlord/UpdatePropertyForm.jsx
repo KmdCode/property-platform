@@ -9,6 +9,7 @@ const UpdatePropertyForm = ({ propertyId, initialData, onClose, onUpdate }) => {
     location: initialData.location,
     furnished: initialData.furnished,
     webUrl: initialData.webUrl,
+    phoneNumber: initialData.phoneNumber,
   });
 
   const handleInputChange = (e) => {
@@ -99,6 +100,19 @@ const UpdatePropertyForm = ({ propertyId, initialData, onClose, onUpdate }) => {
               id="webUrl"
               name="webUrl"
               value={formData.webUrl}
+              onChange={handleInputChange}
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phoneNumber">
+            Phone Number: 
+            </label>
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={formData.phoneNumber}
               onChange={handleInputChange}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />

@@ -63,7 +63,7 @@ const FeaturedProperties = () => {
                     </a>
                     
                   <a
-                    href={`https://wa.me/+27${property.agent.phoneNum}?text="Good Day, I would like to enquire about ${property.name}"`}
+                    href={`https://wa.me/+27${property.phoneNumber}?text="Good Day, I would like to enquire about ${property.name}"`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-600 hover:text-green-800 ml-2"

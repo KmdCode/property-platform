@@ -68,10 +68,7 @@ exports.addProperty = (req, res) => {
         genderAllowed,
         occupancyType,
         images: imageUrls,  // Store the array of image URLs
-        agent: {
-          email: req.user.email,
-          phoneNum: req.user.phoneNumber
-        },
+        phoneNumber,
         webUrl
   
       });
