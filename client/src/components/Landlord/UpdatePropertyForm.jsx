@@ -8,8 +8,7 @@ const UpdatePropertyForm = ({ propertyId, initialData, onClose, onUpdate }) => {
     price: initialData.price,
     location: initialData.location,
     furnished: initialData.furnished,
-    latitude: initialData.latitude,
-    longitude: initialData.longitude
+    webUrl: initialData.webUrl,
   });
 
   const handleInputChange = (e) => {
@@ -92,27 +91,14 @@ const UpdatePropertyForm = ({ propertyId, initialData, onClose, onUpdate }) => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="latitude">
-            Location Map Latitude:
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="webUrl">
+            Link to property:
             </label>
             <input
               type="text"
-              id="latitude"
-              name="latitude"
-              value={formData.latitude}
-              onChange={handleInputChange}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="longitude">
-            Location Map Longitude:
-            </label>
-            <input
-              type="text"
-              id="longitude"
-              name="longitude"
-              value={formData.longitude}
+              id="webUrl"
+              name="webUrl"
+              value={formData.webUrl}
               onChange={handleInputChange}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />

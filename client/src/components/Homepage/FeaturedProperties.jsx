@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa'; // Import WhatsApp icon
 import axios from 'axios';
 
@@ -58,12 +57,11 @@ const FeaturedProperties = () => {
                 
                 
                 <div className="flex justify-between items-center mt-4"> {/* Flex container for button and icon */}
-                  <Link to={`/property/${property._id}`}>
-                    <button className="bg-violet-700 text-white py-2 px-4 rounded-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-                      View Property
-                    </button>
-                  </Link>
                   
+                    <a href = {`https://www.${property.webUrl}`} className="bg-violet-700 text-white py-2 px-4 rounded-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                      View Property
+                    </a>
+                    
                   <a
                     href={`https://wa.me/+27${property.agent.phoneNum}?text="Good Day, I would like to enquire about ${property.name}"`}
                     target="_blank"

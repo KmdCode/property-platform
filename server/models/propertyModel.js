@@ -1,52 +1,5 @@
 const mongoose = require('mongoose');
 
-const tenantSchema = new mongoose.Schema({
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',  
-    required: true,
-  },
-  roomNumber: {
-    type: String,
-  },
-  roomType: {
-    type: String,
-    enum: ['single', 'sharing'],
-    default: 'sharing',
-  },
-});
-
-const applicantSchema = new mongoose.Schema({
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',  
-    required: true,
-  },
-  fundingType: {
-    type: String,
-    enum: ['NSFAS', 'Self funded', 'Private Bursary'],
-  },
-  roomType: {
-    type: String,
-    default: 'sharing',
-  },
-});
-
-const requestSchema = new mongoose.Schema({
-  name:{
-    type: String,
-  },
-  email:{
-    type: String,
-  },
-  phoneNum:{
-    type: String,
-  },
-  date:{
-    type:Date,
-  }
-})
-
 const propertySchema = new mongoose.Schema({
   name: {
     type: String,
@@ -91,15 +44,10 @@ const propertySchema = new mongoose.Schema({
       message: 'You can only upload up to 6 images.'
     }
   },
-  longitude:{
+  webUrl:{
     type: String
   },
-  latitude:{
-    type: String,
-  },
-  tenants: [tenantSchema],
-  applicants: [applicantSchema],  
-  viewingRequests: [requestSchema], 
+
 });
 
 module.exports = mongoose.model('Property', propertySchema);
