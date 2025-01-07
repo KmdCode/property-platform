@@ -69,8 +69,10 @@ exports.addProperty = (req, res) => {
         occupancyType,
         images: imageUrls, 
         phoneNumber,
-        webUrl
-  
+        webUrl,
+        agent: {
+          email: req.user.email,
+        }
       });
 
       await property.save();

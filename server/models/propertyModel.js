@@ -25,6 +25,12 @@ const propertySchema = new mongoose.Schema({
     enum: ['single', 'sharing'],
     default: 'single',
   },
+  agent: {
+    email: {
+      type: String,
+      required: true,
+    }
+  },
   images: {
     type: [String],  
     validate: {
