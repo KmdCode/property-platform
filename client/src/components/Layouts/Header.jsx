@@ -33,12 +33,22 @@ const Header = () => {
     <header className="bg-white shadow-md relative">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
+<<<<<<< HEAD
         <a href="/" className="flex items-center">
+=======
+        <a href = "/" className="flex items-center">
+>>>>>>> 015ef2b6a21f4fc538100971f3593df20d456280
           <img
-            src="/real-estate-logo.png"
+            src="/Logo 23.png"
             alt="App Logo"
-            className="h-20 w-20 mr-2"
+            className="h-11 w-35 mr-2"
           />
+<<<<<<< HEAD
+=======
+          <a href="/" className="font-semibold text-xl text-gray-800">
+
+          </a>
+>>>>>>> 015ef2b6a21f4fc538100971f3593df20d456280
         </a>
 
         {/* Hamburger Icon for Mobile */}
@@ -101,10 +111,6 @@ const Header = () => {
                 {userRole === 'landlord' && (
                   <>
                     <a href="/admin-dashboard" className="text-gray-600 hover:text-gray-800">Admin Dashboard</a>
-                    <a href="/notifications" className="relative text-gray-600 hover:text-gray-800">
-                      Notifications
-                      <span className="absolute top-0 right-0 inline-block w-2.5 h-2.5 bg-red-500 rounded-full"></span>
-                    </a>
                   </>
                 )}
                 <a href="/signin" onClick={handleLogout} className="text-gray-600 hover:text-gray-800">Logout</a>

@@ -23,7 +23,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-sky-100 p-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Benefits of Using Our Platform</h2>
 
         <div className="mb-8">

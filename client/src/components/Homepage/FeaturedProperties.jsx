@@ -40,7 +40,7 @@ const FeaturedProperties = () => {
               <img
                 src={property.image || '/placeholder-image.jpg'}
                 alt={property.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-45 object-cover"
               />
               
               <div className="p-4 flex-grow flex flex-col relative">
@@ -58,7 +58,7 @@ const FeaturedProperties = () => {
                 
                 <div className="flex justify-between items-center mt-4"> {/* Flex container for button and icon */}
                   
-                    <a href = {`https://www.${property.webUrl}`} className="bg-violet-700 text-white py-2 px-4 rounded-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    <a href = {`https://www.${property.webUrl}`} className="bg-cyan-800 text-white py-2 px-4 rounded-lg hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
                       View Property
                     </a>
                     

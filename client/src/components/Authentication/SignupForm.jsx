@@ -59,7 +59,7 @@ const SignupForm = () => {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-cyan-500"
               placeholder="Enter your name"
               required
             />
@@ -71,7 +71,7 @@ const SignupForm = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-cyan-500"
               placeholder="Enter your email"
               required
             />
@@ -83,7 +83,7 @@ const SignupForm = () => {
               id="phoneNumber"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-cyan-500"
               placeholder="Enter your phone number"
               required
             />
@@ -95,7 +95,7 @@ const SignupForm = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-cyan-500"
               placeholder="Enter password"
               required
             />
@@ -107,19 +107,19 @@ const SignupForm = () => {
               id="confirmPassword"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-cyan-500"
               placeholder="Confirm password"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full py-2 text-white bg-violet-700 rounded-lg hover:bg-violet-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="w-full py-2 text-white bg-cyan-800 rounded-lg hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50"
           >
             Sign Up
           </button>
           <p className="text-sm text-center text-gray-600">
-            Already have an account? <a href="/signin" className="font-medium text-blue-600 hover:underline">Login</a>
+            Already have an account? <a href="/signin" className="font-medium text-cyan-800 hover:underline">Login</a>
           </p>
         </form>
       </div>
