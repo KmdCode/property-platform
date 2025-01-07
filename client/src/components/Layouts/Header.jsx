@@ -33,22 +33,15 @@ const Header = () => {
     <header className="bg-white shadow-md relative">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
-<<<<<<< HEAD
-        <a href="/" className="flex items-center">
-=======
         <a href = "/" className="flex items-center">
->>>>>>> 015ef2b6a21f4fc538100971f3593df20d456280
           <img
             src="/Logo 23.png"
             alt="App Logo"
             className="h-11 w-35 mr-2"
           />
-<<<<<<< HEAD
-=======
           <a href="/" className="font-semibold text-xl text-gray-800">
 
           </a>
->>>>>>> 015ef2b6a21f4fc538100971f3593df20d456280
         </a>
 
         {/* Hamburger Icon for Mobile */}

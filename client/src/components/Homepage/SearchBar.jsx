@@ -44,7 +44,7 @@ const SearchBar = () => {
                 id="minPrice"
                 value={minPrice}
                 onChange={(e) => setMinPrice(e.target.value)}
-                className="mt-1 pt-1 pb-1 pl-2 block w-full border-2 border-cyan-800 rounded-md shadow-sm focus:border-cyan-800 focus:ring-cyan-800 sm:text-sm"
+                className="mt-1 pt-1 pb-1 pl-2 block w-full border-2 border-cyan-800 rounded-md shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
                 placeholder="Enter minimum price"
               />
             </div>
@@ -58,7 +58,7 @@ const SearchBar = () => {
                 id="maxPrice"
                 value={maxPrice}
                 onChange={(e) => setMaxPrice(e.target.value)}
-                className="mt-1 pt-1 pb-1 pl-2 block w-full border-2 border-cyan-800 rounded-md shadow-sm focus:border-cyan-800 focus:ring-cyan-800 sm:text-sm"
+                className="mt-1 pt-1 pb-1 pl-2 block w-full border-2 border-cyan-800 rounded-md shadow-sm focus:border-cyan-500 focus:ring-cyan-800 sm:text-sm"
                 placeholder="Enter maximum price"
               />
             </div>
@@ -73,7 +73,7 @@ const SearchBar = () => {
                 id="gender"
                 value={gender}
                 onChange={(e) => setGender(e.target.value)}
-                className="mt-1 pt-1 pb-1 block w-full border-2 border-cyan-800 rounded-md shadow-sm focus:border-cyan-800 focus:ring-cyan-500 sm:text-sm"
+                className="mt-1 pt-1 pb-1 block w-full border-2 border-cyan-800 rounded-md shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
               >
                 <option value="">Any</option>
                 <option value="male">Male</option>
@@ -89,7 +89,7 @@ const SearchBar = () => {
                 id="location"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
-                className="mt-1 pt-1 pb-1 block w-full border-2 border-cyan-800 rounded-md shadow-sm focus:border-cyan-800 focus:ring-cyan-800 sm:text-sm"
+                className="mt-1 pt-1 pb-1 block w-full border-2 border-cyan-800 rounded-md shadow-sm focus:border-cyan-500 focus:ring-cyan-800 sm:text-sm"
               >
                 <option value="">Any</option>
                 <option value="Hatfield">Hatfield</option>
