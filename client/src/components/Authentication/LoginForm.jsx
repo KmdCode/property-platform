@@ -49,7 +49,7 @@ const LoginForm = () => {
               id="email"
               value = {email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-cyan-500"
               placeholder="Enter your email"
             />
           </div>
@@ -60,18 +60,18 @@ const LoginForm = () => {
               id="password"
               value = {password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+              className="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring focus:ring-cyan-500"
               placeholder="Enter your password"
             />
           </div>
           <button
             type="submit"
-            className="w-full py-2 text-white bg-violet-700 rounded-lg hover:bg-violet-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="w-full py-2 text-white bg-cyan-800 rounded-lg hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50"
           >
             Login
           </button>
           <p className="text-sm text-center text-gray-600">
-            Don't have an account? <a href="/signup" className="font-medium text-blue-600 hover:underline">Sign up</a>
+            Don't have an account? <a href="/signup" className="font-medium text-cyan-800 hover:underline">Sign up</a>
           </p>
         </form>
       </div>

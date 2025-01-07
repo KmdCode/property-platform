@@ -247,7 +247,7 @@ exports.searchProperties = async (req, res) => {
       query.furnished = true; 
     }
 
-    const properties = await Property.find(query).select('name price location furnished genderAllowed occupancyType images').lean();
+    const properties = await Property.find(query).select('name price location furnished genderAllowed occupancyType images webUrl').lean();
 
     const propertiesWithSingleImage = properties.map((property) => ({
       ...property,
