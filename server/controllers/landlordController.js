@@ -52,9 +52,10 @@ exports.addProperty = (req, res) => {
       furnished,
       genderAllowed,
       occupancyType,
+      phoneNumber,
       webUrl,
     } = req.body;
-
+    console.log(webUrl, name, description, price, location, furnished, genderAllowed, occupancyType, phoneNumber)
     // Extract image URLs
     const imageUrls = req.files.map(file => `/uploads/${file.filename}`);
 
