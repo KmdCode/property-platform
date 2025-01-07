@@ -43,7 +43,7 @@ const LandlordProperties = ({ adminEmail }) => {
                 <p className="text-gray-500 mb-2">Location: {property.location}</p>
                 <p className="text-gray-500 mb-2">Furnished: {property.furnished ? 'Yes' : 'No'}</p>
                 <button
-                  className="bg-violet-700 text-white py-2 px-4 rounded-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mt-2"
+                  className="bg-cyan-800 text-white py-2 px-4 rounded-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mt-2"
                   onClick={() => handleManageClick(property.id)}
                 >
                   Manage

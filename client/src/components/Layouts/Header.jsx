@@ -33,16 +33,13 @@ const Header = () => {
     <header className="bg-white shadow-md relative">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center">
+        <a href="/" className="flex items-center">
           <img
             src="/real-estate-logo.png"
             alt="App Logo"
             className="h-20 w-20 mr-2"
           />
-          <a href="/" className="font-semibold text-xl text-gray-800">
-            Pretoria Student Accommodations
-          </a>
-        </div>
+        </a>
 
         {/* Hamburger Icon for Mobile */}
         <button

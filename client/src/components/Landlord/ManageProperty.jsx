@@ -74,7 +74,7 @@ const ManageProperty = () => {
         <p className="text-gray-500 mb-2">Furnished: {property.furnished ? 'Yes' : 'No'}</p>
         <button
           onClick={() => setIsUpdateOpen(true)}
-          className="bg-violet-700 text-white py-2 px-4 mt-2 rounded-lg hover:bg-violet-800"
+          className="bg-cyan-800 text-white py-2 px-4 mt-2 rounded-lg hover:bg-black"
         >
           Update
         </button>
