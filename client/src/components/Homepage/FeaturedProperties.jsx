@@ -40,7 +40,7 @@ const FeaturedProperties = () => {
               <img
                 src={property.image || '/placeholder-image.jpg'}
                 alt={property.name}
-                className="w-full h-45 object-cover"
+                className="w-full h-50 object-cover"
               />
               
               <div className="p-4 flex-grow flex flex-col relative">
