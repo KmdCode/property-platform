@@ -143,9 +143,9 @@ const AddPropertyForm = ({ onSubmit, onCancel }) => {
         <div className="mb-4">
           <label className="block text-gray-700">Phone Number</label>
           <input
-            type="text"
-            name="webUrl"
-            value={formData.webUrl}
+            type="number"
+            name="phoneNumber"
+            value={formData.phoneNumber}
             onChange={handleChange}
             className="w-full px-3 py-2 border rounded-lg"
             required
@@ -155,13 +155,14 @@ const AddPropertyForm = ({ onSubmit, onCancel }) => {
           <label className="block text-gray-700">Link to property</label>
           <input
             type="text"
-            name="phoneNumber"
-            value={formData.phoneNumber}
+            name="webUrl"
+            value={formData.webUrl}
             onChange={handleChange}
             className="w-full px-3 py-2 border rounded-lg"
             required
           />
         </div>
+        
         
         <div className="mb-4">
           <label className="block text-gray-700">Furnished</label>
