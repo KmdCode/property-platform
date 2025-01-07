@@ -22,7 +22,7 @@ const PropertyCard = ({ property }) => {
 
       <button
         onClick={()=>handleManageClick(property._id)}
-        className="bg-cyan-800 text-white py-2 px-4 mt-2 rounded-lg hover:bg-black"
+        className="bg-cyan-800 text-white py-2 px-4 mt-2 rounded-lg hover:bg-cyan-500"
       >
         Manage
       </button>

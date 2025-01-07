@@ -267,7 +267,7 @@ const AddPropertyForm = ({ onSubmit, onCancel }) => {
           </button>
           <button
             type="submit"
-            className="bg-violet-700 text-white px-4 py-2 rounded-lg"
+            className="bg-cyan-800 text-white px-4 py-2 rounded-lg  hover:bg-cyan-500"
             disabled={loading}
           >
             {loading ? 'Submitting...' : 'Submit'}

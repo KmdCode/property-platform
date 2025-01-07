@@ -48,7 +48,7 @@ const LandlordProperties = () => {
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-2xl font-semibold text-center mb-6">Manage Your Properties</h2>
       <button
-        className="bg-cyan-800 my-2 text-white py-2 px-4 rounded-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mt-2"
+        className="bg-cyan-800 my-2 text-white py-2 px-4 rounded-lg hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mt-2"
         onClick={handleAddNewPropertyClick}
       >
         Add New Property

@@ -132,13 +132,13 @@ const UpdatePropertyForm = ({ propertyId, initialData, onClose, onUpdate }) => {
           <div className="flex items-center justify-between">
             <button
               type="submit"
-              className="bg-cyan-800 text-white py-2 px-4 rounded-lg hover:bg-black focus:outline-none focus:shadow-outline"
+              className="bg-cyan-800 text-white py-2 px-4 rounded-lg hover:bg-cyan-500 focus:outline-none focus:shadow-outline"
             >
               Save Changes
             </button>
             <button
               onClick={onClose}
-              className="bg-cyan-800 text-white py-2 px-4 ml-4 rounded-lg hover:bg-gray-700 focus:outline-none focus:shadow-outline"
+              className="bg-cyan-800 text-white py-2 px-4 ml-4 rounded-lg hover:bg-cyan-500 focus:outline-none focus:shadow-outline"
             >
               Cancel
             </button>
